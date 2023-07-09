@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world step
         id: hello
-        uses: https://github.com/amalej/github-action-first@1.0.2
+        uses: amalej/github-action-first@1.0.2
         with:
           who-to-greet: 'Alejandro Marco'
       - name: Get the output
