@@ -6,7 +6,8 @@ jobs:
     name: Job that says hello
     steps:
       - name: Hello world step
-        uses: amalej/github-action-first@v1.0.2
+        id: hello
+        uses: amalej/github-action-first@v1.0.3
         with:
           who-to-greet: 'Alejandro Marco'
       - name: Get the output
