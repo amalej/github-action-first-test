@@ -11,6 +11,4 @@ jobs:
         with:
           who-to-greet: 'Alejandro Marco'
       - name: Get the output
-        env:
-          OUTPUT_CONTEXT: ${{ toJson(github_output) }}
-        run: echo "The time was $OUTPUT_CONTEXT"
+        run: echo "The time was $GITHUB_OUTPUT"
