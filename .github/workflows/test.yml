@@ -6,10 +6,10 @@ jobs:
     name: Job that says hello
     steps:
       - name: Log
-        run: echo "value is ${secrets.DUMMY_KEY}";
+        env:
+          DUMMY_KEY: ${{ secrets.DUMMY_KEY }};
       - name: Log
-        run: echo DUMMY_KEY = echo ${secrets.DUMMY_KEY}\
-          echo "value is ${process.env.DUMMY_KEY}";
+        run: echo "value is ${process.env.DUMMY_KEY}";
       - name: Hello world step
         id: hello
         uses: amalej/github-action-first@v1.0.7
