@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Log
         env:
-          DUMMY_KEY: ${{ secrets.DUMMY_KEY }};
+          DUMMY_KEY: ${{ secrets.SERIVCE_ACCOUNT_CREDENTIALS }};
         run: echo "value is $DUMMY_KEY";
       - name: Hello world step
         id: hello
