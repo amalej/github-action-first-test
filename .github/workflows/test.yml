@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Job that says hello
     steps:
+      - name: Log
+        run: echo "value is ${process.env.DUMMY_KEY}";
       - name: Hello world step
         id: hello
         uses: amalej/github-action-first@v1.0.7
