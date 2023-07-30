@@ -8,7 +8,6 @@ jobs:
       - name: Log
         env:
           DUMMY_KEY: ${{ secrets.DUMMY_KEY }};
-      - name: Log
         run: echo "value is ${process.env.DUMMY_KEY}";
       - name: Hello world step
         id: hello
